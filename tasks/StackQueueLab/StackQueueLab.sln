@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackQueueLab", "StackQueue
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ReverseString", "..\01.ReverseString\01.ReverseString.csproj", "{D8362369-351D-4C1F-ACE0-34D1374FB648}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.StackSum", "..\02.StackSum\02.StackSum.csproj", "{0DE8BF38-5715-450F-89CC-D8D3E01B2BD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D8362369-351D-4C1F-ACE0-34D1374FB648}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8362369-351D-4C1F-ACE0-34D1374FB648}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8362369-351D-4C1F-ACE0-34D1374FB648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DE8BF38-5715-450F-89CC-D8D3E01B2BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE8BF38-5715-450F-89CC-D8D3E01B2BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE8BF38-5715-450F-89CC-D8D3E01B2BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE8BF38-5715-450F-89CC-D8D3E01B2BD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
