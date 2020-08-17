@@ -6,7 +6,7 @@ namespace StackQueueLab
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Test Successful");
+            Console.WriteLine("Test Done");
         }
     }
 }
