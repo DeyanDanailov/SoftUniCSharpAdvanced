@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.PrintEvenNumbers", "..\0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Supermarket", "..\06.Supermarket\06.Supermarket.csproj", "{D6D850E7-3B75-4F56-A6CF-292CF6083196}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.HotPotato", "..\07.HotPotato\07.HotPotato.csproj", "{34CF1142-E750-4E38-AFA4-6D5719C6589A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D6D850E7-3B75-4F56-A6CF-292CF6083196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6D850E7-3B75-4F56-A6CF-292CF6083196}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6D850E7-3B75-4F56-A6CF-292CF6083196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34CF1142-E750-4E38-AFA4-6D5719C6589A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34CF1142-E750-4E38-AFA4-6D5719C6589A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34CF1142-E750-4E38-AFA4-6D5719C6589A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34CF1142-E750-4E38-AFA4-6D5719C6589A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
