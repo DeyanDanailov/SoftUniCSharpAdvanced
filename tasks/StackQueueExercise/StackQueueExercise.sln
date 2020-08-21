@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.FastFood", "..\04.FastFo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.FashionBoutique", "..\05.FashionBoutique\05.FashionBoutique.csproj", "{67AC29E1-7490-44D8-A66C-0D7DE179C3B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.SongsQueue", "..\06.SongsQueue\06.SongsQueue.csproj", "{C3DC123D-002A-40E4-8BE1-180705439FDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{67AC29E1-7490-44D8-A66C-0D7DE179C3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67AC29E1-7490-44D8-A66C-0D7DE179C3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67AC29E1-7490-44D8-A66C-0D7DE179C3B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3DC123D-002A-40E4-8BE1-180705439FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3DC123D-002A-40E4-8BE1-180705439FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3DC123D-002A-40E4-8BE1-180705439FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3DC123D-002A-40E4-8BE1-180705439FDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
