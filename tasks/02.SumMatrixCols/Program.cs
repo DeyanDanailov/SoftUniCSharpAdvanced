@@ -32,7 +32,7 @@ namespace _02.SumMatrixCols
             }
             
         }
-        private static int[] ParseArrayFromConsole(params char[] splitSymbols)
+        public static int[] ParseArrayFromConsole(params char[] splitSymbols)
 
            => Console.ReadLine()
                 .Split(splitSymbols, StringSplitOptions.RemoveEmptyEntries)
