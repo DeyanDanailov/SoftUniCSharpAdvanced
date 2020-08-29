@@ -9,12 +9,12 @@ namespace _07.PascalTriangle
             int n = int.Parse(Console.ReadLine());
             if (n>2 && n<=60 )
             {
-                var pascalTriangle = new int[n][];
-                pascalTriangle[0] = new int[1] { 1 };
-                pascalTriangle[1] = new int[2] { 1, 1 };
+                var pascalTriangle = new long[n][];
+                pascalTriangle[0] = new long[1] { 1 };
+                pascalTriangle[1] = new long[2] { 1, 1 };
                 for (int row = 2; row < pascalTriangle.Length; row++)
                 {
-                    pascalTriangle[row] = new int[row + 1];
+                    pascalTriangle[row] = new long[row + 1];
                     pascalTriangle[row][0] = 1;
                     pascalTriangle[row][row] = 1;
                     for (int col = 1; col < row; col++)
