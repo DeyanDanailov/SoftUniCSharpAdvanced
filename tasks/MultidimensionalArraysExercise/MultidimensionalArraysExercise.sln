@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultidimensionalArraysExercise", "MultidimensionalArraysExercise.csproj", "{868C57C2-ACE4-4593-9187-DD1F5B5BD6F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultidimensionalArraysExercise", "MultidimensionalArraysExercise.csproj", "{868C57C2-ACE4-4593-9187-DD1F5B5BD6F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.DiagonalDifference", "..\01.DiagonalDifference\01.DiagonalDifference.csproj", "{39988DC8-039E-4F02-A771-5B632EE559A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.DiagonalDifference", "..\01.DiagonalDifference\01.DiagonalDifference.csproj", "{39988DC8-039E-4F02-A771-5B632EE559A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.2x2SquaresInMatrixes", "..\02.2x2SquaresInMatrixes\02.2x2SquaresInMatrixes.csproj", "{CAD8C340-F86D-4BDC-AD1E-69B0D4FED40C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.2x2SquaresInMatrixes", "..\02.2x2SquaresInMatrixes\02.2x2SquaresInMatrixes.csproj", "{CAD8C340-F86D-4BDC-AD1E-69B0D4FED40C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.MaximalSum", "..\03.MaximalSum\03.MaximalSum.csproj", "{E1ED9BCB-AD75-471E-AE9E-4401B20A2DCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.MaximalSum", "..\03.MaximalSum\03.MaximalSum.csproj", "{E1ED9BCB-AD75-471E-AE9E-4401B20A2DCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.MatrixShuffling", "..\04.MatrixShuffling\04.MatrixShuffling.csproj", "{5AAE024E-C22C-4DBD-B7D8-7709919412D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.MatrixShuffling", "..\04.MatrixShuffling\04.MatrixShuffling.csproj", "{5AAE024E-C22C-4DBD-B7D8-7709919412D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Snake", "..\05.Snake\05.Snake.csproj", "{C5E69D33-CDD7-4F88-92F8-6E1808675E6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.Snake", "..\05.Snake\05.Snake.csproj", "{C5E69D33-CDD7-4F88-92F8-6E1808675E6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.JaggedArrayManipulator", "..\06.JaggedArrayManipulator\06.JaggedArrayManipulator.csproj", "{BF144FC7-D3A8-4BD1-A1B5-7D47B6B22A02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.JaggedArrayManipulator", "..\06.JaggedArrayManipulator\06.JaggedArrayManipulator.csproj", "{BF144FC7-D3A8-4BD1-A1B5-7D47B6B22A02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.KnightsGame", "..\07.KnightsGame\07.KnightsGame.csproj", "{C83E8224-9EDD-45F8-A89E-A2D313D6D8D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.KnightsGame", "..\07.KnightsGame\07.KnightsGame.csproj", "{C83E8224-9EDD-45F8-A89E-A2D313D6D8D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Bombs", "..\08.Bombs\08.Bombs.csproj", "{3A1FE1F9-1963-4E2E-B623-2C6813195B3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{C83E8224-9EDD-45F8-A89E-A2D313D6D8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C83E8224-9EDD-45F8-A89E-A2D313D6D8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C83E8224-9EDD-45F8-A89E-A2D313D6D8D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A1FE1F9-1963-4E2E-B623-2C6813195B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A1FE1F9-1963-4E2E-B623-2C6813195B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A1FE1F9-1963-4E2E-B623-2C6813195B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A1FE1F9-1963-4E2E-B623-2C6813195B3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
