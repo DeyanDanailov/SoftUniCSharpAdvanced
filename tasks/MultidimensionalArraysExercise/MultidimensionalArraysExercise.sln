@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Bombs", "..\08.Bombs\08.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.Miner", "..\09.Miner\09.Miner.csproj", "{835725E9-0E27-42EA-8B83-1BFC83FF3AD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.VampireBunnies", "..\10.VampireBunnies\10.VampireBunnies.csproj", "{81394ECD-38C1-42C4-8BE4-0EFE794B693A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{835725E9-0E27-42EA-8B83-1BFC83FF3AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{835725E9-0E27-42EA-8B83-1BFC83FF3AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{835725E9-0E27-42EA-8B83-1BFC83FF3AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81394ECD-38C1-42C4-8BE4-0EFE794B693A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81394ECD-38C1-42C4-8BE4-0EFE794B693A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81394ECD-38C1-42C4-8BE4-0EFE794B693A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81394ECD-38C1-42C4-8BE4-0EFE794B693A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
