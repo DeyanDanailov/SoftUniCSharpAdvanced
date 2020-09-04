@@ -8,19 +8,43 @@ namespace _07.SoftUniParty
         static void Main(string[] args)
         {
             var input = Console.ReadLine();
-            var people = new SortedSet<string>();
+            var vip = new SortedSet<string>();
+            var people = new HashSet<string>();
             while (input != "PARTY")
             {
-                people.Add(input);
+                if (Char.IsDigit(input[0]))
+                {
+                    vip.Add(input);
+                }
+                else
+                {
+                    people.Add(input);
+                }
+
                 input = Console.ReadLine();
             }
             while (input != "END")
             {
-                people.Remove(input);
+                if (Char.IsDigit(input[0]))
+                {
+                    vip.Remove(input);
+                }
+                else
+                {
+                    people.Remove(input);
+                }
                 input = Console.ReadLine();
             }
-            Console.WriteLine(people.Count);
-            Console.WriteLine(String.Join(Environment.NewLine, people));
+            Console.WriteLine(vip.Count + people.Count);
+            if (vip.Count > 0)
+            {
+                Console.WriteLine(String.Join(Environment.NewLine, vip));
+            }
+            if (people.Count > 0)
+            {
+                Console.WriteLine(String.Join(Environment.NewLine, people));
+
+            }
         }
     }
 }
