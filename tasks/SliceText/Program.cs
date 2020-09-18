@@ -10,7 +10,7 @@ namespace SliceText
         static void Main(string[] args)
         {
             using var stream = new FileStream("Text.txt", FileMode.OpenOrCreate);
-            //Console.WriteLine(stream.Length);
+            Console.WriteLine(stream.Length);
             var parts = 4;
             var piece  = (int)Math.Ceiling(stream.Length/(decimal)parts);
             var buffer = new byte[piece];
