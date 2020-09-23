@@ -8,7 +8,7 @@ namespace _02.LineNumbers
     {
         static void Main(string[] args)
         {
-            var text = File.ReadLines("text.txt").ToArray();
+            var text = File.ReadAllLines("./text.txt").ToArray();
             
             for (int i = 0; i < text.Length; i++)
             { 
