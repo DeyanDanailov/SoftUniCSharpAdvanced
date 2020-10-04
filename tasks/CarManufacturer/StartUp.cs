@@ -75,7 +75,7 @@ namespace CarManufacturer
                 {
                     sumOfTires += tire.Pressure;
                 }
-                if (sumOfTires > 9 && sumOfTires < 10)
+                if (sumOfTires >= 9 && sumOfTires <= 10)
                 {
                     car.Drive(20.0);
                     specialCars.Add(car);                   
