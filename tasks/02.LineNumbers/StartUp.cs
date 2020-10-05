@@ -4,11 +4,11 @@ using System.Linq;
 
 namespace _02.LineNumbers
 {
-    class StartUp
+    public class StartUp
     {
         static void Main(string[] args)
         {
-            var text = File.ReadAllLines("./text.txt").ToArray();
+            var text = File.ReadAllLines(@"..\..\..\text.txt").ToArray();
             
             for (int i = 0; i < text.Length; i++)
             { 
@@ -25,7 +25,7 @@ namespace _02.LineNumbers
                         puncts++;
                     }
                 }
-                File.AppendAllText("result.txt", $"Line {i +1}: {text[i]} ({letters})({puncts})\n");
+                File.AppendAllText(@"..\..\..\result.txt", $"Line {i +1}: {text[i]} ({letters})({puncts})\n");
             }
         }
     }
