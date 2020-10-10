@@ -81,7 +81,7 @@ namespace CustomListDemo
         }
         private void ShiftToRight(int index)
         {
-            for (int i = Count; i > index; i--)
+            for (int i = this.Count; i > index; i--)
             {
                 this.items[i] = this.items[i - 1];
             }
