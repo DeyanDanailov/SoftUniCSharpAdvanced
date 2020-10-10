@@ -9,20 +9,29 @@ namespace P01.GenericBoxOfString
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            var list = new List<Box<int>>();
-            var box = new Box<int>(0);
+            var list = new List<Box<IComparable>>();
+            //var box = new Box<IComparable>(null);
             for (int i = 0; i < n; i++)
             {
-                var currentInt = int.Parse(Console.ReadLine());
-                 box = new Box<int>(currentInt);
-                list.Add(box);
+                list.Add(new Box<IComparable>(Console.ReadLine()));
                 //Console.WriteLine(box);
             }
-            var indexes = Console.ReadLine().Split().Select(int.Parse).ToArray();
-            var index1 = indexes[0];
-            var index2 = indexes[1];
-            list = box.SwapElements(list, index1, index2).ToList();
-            Console.WriteLine(String.Join(Environment.NewLine, list));
+            //var indexes = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            //var index1 = indexes[0];
+            //var index2 = indexes[1];
+            //list = box.SwapElements(list, index1, index2).ToList();
+            var toCompare = new Box<IComparable>(Console.ReadLine());
+            int result = list.Where(item => item.IsBigger(toCompare) == true).Count();
+            Console.WriteLine(result);
+            //var cnt = 0;
+            //foreach (var item in list)
+            //{
+            //    if (item.IsBigger(toCompare))
+            //    {
+            //        cnt++;
+            //    }
+            //}
+            //Console.WriteLine(cnt);
         }
     }
 }

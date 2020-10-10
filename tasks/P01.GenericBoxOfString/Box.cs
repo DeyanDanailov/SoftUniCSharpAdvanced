@@ -5,6 +5,7 @@ using System.Text;
 namespace P01.GenericBoxOfString
 {
     public class Box<T>
+        where T : IComparable
     {
         private T value;
         public Box(T value)
@@ -21,6 +22,18 @@ namespace P01.GenericBoxOfString
             list[index1] = list[index2];
             list[index2] = temp;
             return list;
+        }
+        public bool IsBigger( Box<T> toCompare)
+        {
+            var result = this.value.CompareTo(toCompare.value);
+            if (result > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
    
