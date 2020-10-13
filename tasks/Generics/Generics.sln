@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxOfT", "BoxOfT.csproj", "{110E139D-B23E-4A9D-A736-FD8608418E40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxOfT", "BoxOfT.csproj", "{110E139D-B23E-4A9D-A736-FD8608418E40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericArrayCreator", "..\GenericArrayCreator\GenericArrayCreator.csproj", "{1F7CF69D-6850-4959-8298-516FB1227946}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericArrayCreator", "..\GenericArrayCreator\GenericArrayCreator.csproj", "{1F7CF69D-6850-4959-8298-516FB1227946}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericScale", "..\GenericScale\GenericScale.csproj", "{23FDA823-7C39-48C3-963D-11124020C7D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericScale", "..\GenericScale\GenericScale.csproj", "{23FDA823-7C39-48C3-963D-11124020C7D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.GenericBoxOfString", "..\P01.GenericBoxOfString\P01.GenericBoxOfString.csproj", "{C8928FBD-C1EA-4A6D-962D-EE8D09E7D9AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.GenericBoxOfString", "..\P01.GenericBoxOfString\P01.GenericBoxOfString.csproj", "{C8928FBD-C1EA-4A6D-962D-EE8D09E7D9AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07.Tuple", "..\P07.Tuple\P07.Tuple.csproj", "{CE70F09E-8E4E-4D22-AD02-F986C0BA8138}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C8928FBD-C1EA-4A6D-962D-EE8D09E7D9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8928FBD-C1EA-4A6D-962D-EE8D09E7D9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8928FBD-C1EA-4A6D-962D-EE8D09E7D9AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE70F09E-8E4E-4D22-AD02-F986C0BA8138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE70F09E-8E4E-4D22-AD02-F986C0BA8138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE70F09E-8E4E-4D22-AD02-F986C0BA8138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE70F09E-8E4E-4D22-AD02-F986C0BA8138}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
