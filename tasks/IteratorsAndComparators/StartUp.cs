@@ -12,11 +12,14 @@ namespace IteratorsAndComparators
 
             Library libraryOne = new Library();
             Library libraryTwo = new Library(bookOne, bookTwo, bookThree);
-            
-            foreach (var book in libraryTwo.Books)
+            if (libraryTwo.Books.Count > 0)
             {
-                Console.WriteLine(book);
+                foreach (var book in libraryTwo.Books)
+                {
+                    Console.WriteLine(book);
+                }
             }
+            
 
         }
     }
