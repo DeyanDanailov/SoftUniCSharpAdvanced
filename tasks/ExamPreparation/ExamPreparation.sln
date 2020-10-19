@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamPreparation", "ExamPreparation.csproj", "{7915BC6E-2B3A-45A8-BEF4-64795507081D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamPreparation", "ExamPreparation.csproj", "{7915BC6E-2B3A-45A8-BEF4-64795507081D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.Bombs", "..\P01.Bombs\P01.Bombs.csproj", "{03E5FCFF-6E80-4B24-865B-6E07FD0FFE96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.Bombs", "..\P01.Bombs\P01.Bombs.csproj", "{03E5FCFF-6E80-4B24-865B-6E07FD0FFE96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.Snake", "..\P02.SnakeDescription\P02.Snake.csproj", "{6F773610-C5D3-4FD4-85B1-8B12ECEC8D20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.Snake", "..\P02.SnakeDescription\P02.Snake.csproj", "{6F773610-C5D3-4FD4-85B1-8B12ECEC8D20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.Parking", "..\P03.Parking\P03.Parking.csproj", "{794D7158-6879-46D5-AFF5-7A9AC87EB496}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.Parking", "..\P03.Parking\P03.Parking.csproj", "{794D7158-6879-46D5-AFF5-7A9AC87EB496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P1.1.Flower", "..\P1.1.Flower\P1.1.Flower.csproj", "{DB27F0EF-DCCA-4436-AD52-15FB880B7EB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{794D7158-6879-46D5-AFF5-7A9AC87EB496}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{794D7158-6879-46D5-AFF5-7A9AC87EB496}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{794D7158-6879-46D5-AFF5-7A9AC87EB496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB27F0EF-DCCA-4436-AD52-15FB880B7EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB27F0EF-DCCA-4436-AD52-15FB880B7EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB27F0EF-DCCA-4436-AD52-15FB880B7EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB27F0EF-DCCA-4436-AD52-15FB880B7EB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
