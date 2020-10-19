@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P1.1.Flower", "..\P1.1.Flow
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P1.2.Bee", "..\P1.2.Bee\P1.2.Bee.csproj", "{CF709D1A-9A4B-41B0-98CE-B65D27A9BD4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P1.3.VetClinic", "..\P1.3.VetClinic\P1.3.VetClinic.csproj", "{C943BEFF-0AAE-4B6B-BE76-E47FF7728E51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{CF709D1A-9A4B-41B0-98CE-B65D27A9BD4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF709D1A-9A4B-41B0-98CE-B65D27A9BD4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF709D1A-9A4B-41B0-98CE-B65D27A9BD4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C943BEFF-0AAE-4B6B-BE76-E47FF7728E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C943BEFF-0AAE-4B6B-BE76-E47FF7728E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C943BEFF-0AAE-4B6B-BE76-E47FF7728E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C943BEFF-0AAE-4B6B-BE76-E47FF7728E51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
