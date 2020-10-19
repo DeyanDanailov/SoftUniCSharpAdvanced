@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.Parking", "..\P03.Parki
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P1.1.Flower", "..\P1.1.Flower\P1.1.Flower.csproj", "{DB27F0EF-DCCA-4436-AD52-15FB880B7EB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P1.2.Bee", "..\P1.2.Bee\P1.2.Bee.csproj", "{CF709D1A-9A4B-41B0-98CE-B65D27A9BD4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DB27F0EF-DCCA-4436-AD52-15FB880B7EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB27F0EF-DCCA-4436-AD52-15FB880B7EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB27F0EF-DCCA-4436-AD52-15FB880B7EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF709D1A-9A4B-41B0-98CE-B65D27A9BD4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF709D1A-9A4B-41B0-98CE-B65D27A9BD4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF709D1A-9A4B-41B0-98CE-B65D27A9BD4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF709D1A-9A4B-41B0-98CE-B65D27A9BD4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
