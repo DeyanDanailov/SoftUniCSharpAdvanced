@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.Bombs", "..\P01.Bombs\P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.Snake", "..\P02.SnakeDescription\P02.Snake.csproj", "{6F773610-C5D3-4FD4-85B1-8B12ECEC8D20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.Parking", "..\P03.Parking\P03.Parking.csproj", "{794D7158-6879-46D5-AFF5-7A9AC87EB496}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6F773610-C5D3-4FD4-85B1-8B12ECEC8D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F773610-C5D3-4FD4-85B1-8B12ECEC8D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F773610-C5D3-4FD4-85B1-8B12ECEC8D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{794D7158-6879-46D5-AFF5-7A9AC87EB496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{794D7158-6879-46D5-AFF5-7A9AC87EB496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{794D7158-6879-46D5-AFF5-7A9AC87EB496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{794D7158-6879-46D5-AFF5-7A9AC87EB496}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
