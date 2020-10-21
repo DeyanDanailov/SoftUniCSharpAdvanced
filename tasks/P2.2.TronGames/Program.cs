@@ -70,16 +70,7 @@ namespace P2._2.TronGames
                     default:
                         break;
                 }
-                if (matrix[fRow, fCol] == 's')
-                {
-                    matrix[fRow, fCol] = 'x';
-                    break;
-                }
-                if (matrix[sRow, sCol] == 'f')
-                {
-                    matrix[sRow, sCol] = 'x';
-                    break;
-                }
+               
                 if (fRow < 0)
                 {
                     fRow = n - 1;
@@ -112,10 +103,20 @@ namespace P2._2.TronGames
                 {
                     sCol = 0;
                 }
+                if (matrix[fRow, fCol] == 's')
+                {
+                    matrix[fRow, fCol] = 'x';
+                    break;
+                }
                 if (matrix[fRow, fCol] == '*')
                 {
                     matrix[fRow, fCol] = 'f';
                 }
+                if (matrix[sRow, sCol] == 'f')
+                {
+                    matrix[sRow, sCol] = 'x';
+                    break;
+                }               
                 if (matrix[sRow, sCol] == '*')
                 {
                     matrix[sRow, sCol] = 's';

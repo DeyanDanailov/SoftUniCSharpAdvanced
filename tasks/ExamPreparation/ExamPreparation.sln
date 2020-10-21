@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2.1.ClubParty", "..\P2.1.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2.2.TronGames", "..\P2.2.TronGames\P2.2.TronGames.csproj", "{FEA7B783-5AC3-4953-9A06-3C8A8AE9BA3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2.3.Heroes", "..\P2.3.Heroes\P2.3.Heroes.csproj", "{998979B7-2872-4EB6-B4E5-C23D3C7F36DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{FEA7B783-5AC3-4953-9A06-3C8A8AE9BA3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEA7B783-5AC3-4953-9A06-3C8A8AE9BA3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEA7B783-5AC3-4953-9A06-3C8A8AE9BA3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{998979B7-2872-4EB6-B4E5-C23D3C7F36DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{998979B7-2872-4EB6-B4E5-C23D3C7F36DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{998979B7-2872-4EB6-B4E5-C23D3C7F36DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{998979B7-2872-4EB6-B4E5-C23D3C7F36DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
