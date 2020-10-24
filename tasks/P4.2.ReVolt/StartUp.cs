@@ -2,142 +2,131 @@
 
 namespace P4._2.ReVolt
 {
-    class StartUp
+    public class StartUp
     {
         public class Position
         {
             public Position(int row, int col)
             {
-                this.Row = row;
-                this.Col = col;
+                Col = col;
+                Row = row;
             }
+
             public int Row { get; set; }
+
             public int Col { get; set; }
+
             public bool IsSafe(int rowCount, int colCount)
             {
-                if (this.Row < 0 || this.Col < 0)
+                if (Row < 0 || Col < 0)
                 {
                     return false;
                 }
-                if (this.Row > rowCount - 1 || this.Col > colCount - 1)
+                if (Row >= rowCount || Col >= colCount)
                 {
                     return false;
                 }
+
                 return true;
+            }
+
+            public void CheckOtherSideMovement(int rowCount, int colCount)
+            {
+                if (Row < 0)
+                {
+                    Row = rowCount - 1;
+                }
+                if (Col < 0)
+                {
+                    Col = colCount - 1;
+                }
+                if (Row >= rowCount)
+                {
+                    Row = 0;
+                }
+                if (Col >= colCount)
+                {
+                    Col = 0;
+                }
+            }
+
+            public static Position GetDirection(string command)
+            {
+                int row = 0;
+                int col = 0;
+                if (command == "left")
+                {
+                    col = -1;
+                }
+                if (command == "right")
+                {
+                    col = 1;
+                }
+                if (command == "up")
+                {
+                    row = -1;
+                }
+                if (command == "down")
+                {
+                    row = 1;
+                }
+
+                return new Position(row, col);
             }
         }
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            int m = int.Parse(Console.ReadLine());
-            var matrix = new char[n, n];
-
-            ReadMatrix(n, matrix);
+            int commands = int.Parse(Console.ReadLine());
+            char[,] matrix = new char[n, n];
+            Read(matrix);
             var player = GetPlayerPosition(matrix);
-            if (m>0)
+            if (commands > 0)
             {
                 matrix[player.Row, player.Col] = '-';
             }
-            bool playerWin = false;
-            for (int i = 0; i < m; i++)
+            for (int i = 0; i < commands; i++)
             {
-                var command = Console.ReadLine();
+                string command = Console.ReadLine();
 
-                MovePlayer(n, player, command);
+                MovePlayer(player, command, n);
+                while (matrix[player.Row, player.Col] == 'B')
+                {
+                    MovePlayer(player, command, n);
+                }
 
-                if (matrix[player.Row, player.Col] == 'B')
+                while (matrix[player.Row, player.Col] == 'T')
                 {
-                    MovePlayer(n, player, command);
+                    Position direction = Position.GetDirection(command);
+                    player.Row += direction.Row * -1;
+                    player.Col += direction.Col * -1;
                 }
-                if (matrix[player.Row, player.Col] == 'T')
-                {
-                    switch (command)
-                    {
-                        case "left":
-                            player.Col++;
-                            break;
-                        case "right":
-                            player.Col--;
-                            break;
-                        case "up":
-                            player.Row++;
-                            break;
-                        case "down":
-                            player.Row--;
-                            break;
-                        default:
-                            break;
-                    }
-                }
+
                 if (matrix[player.Row, player.Col] == 'F')
                 {
+                    Console.WriteLine($"Player won!");
                     matrix[player.Row, player.Col] = 'f';
-                    playerWin = true;
-                    break;
+                    Print(matrix);
+                    return;
                 }
             }
-            if (playerWin)
-            {
-                Console.WriteLine("Player won!");
-            }
-            else
-            {
-                matrix[player.Row, player.Col] = 'f';
-                Console.WriteLine("Player lost!");
-            }
 
-            PrintMatrix(matrix);
+            Console.WriteLine($"Player lost!");
+            matrix[player.Row, player.Col] = 'f';
+            Print(matrix);
         }
 
-        private static void MovePlayer(int n, Position player, string command)
+        static Position MovePlayer(Position player, string command, int n)
         {
-            switch (command)
-            {
-                case "left":
-                    player.Col--;
-                    if (!player.IsSafe(n, n))
-                    {
-                        player.Col = n - 1;
-                    }
-                    break;
-                case "right":
-                    player.Col++;
-                    if (!player.IsSafe(n, n))
-                    {
-                        player.Col = 0;
-                    }
-                    break;
-                case "up":
-                    player.Row--;
-                    if (!player.IsSafe(n, n))
-                    {
-                        player.Row = n - 1;
-                    }
-                    break;
-                case "down":
-                    player.Row++;
-                    if (!player.IsSafe(n, n))
-                    {
-                        player.Row = 0;
-                    }
-                    break;
-                default:
-                    break;
-            }
+            Position movement = Position.GetDirection(command);
+            player.Row += movement.Row;
+            player.Col += movement.Col;
+            player.CheckOtherSideMovement(n, n);
+
+            return player;
         }
 
-        private static void ReadMatrix(int n, char[,] matrix)
-        {
-            for (int row = 0; row < n; row++)
-            {
-                var currentRow = Console.ReadLine();
-                for (int col = 0; col < n; col++)
-                {
-                    matrix[row, col] = currentRow[col];
-                }
-            }
-        }
-        private static Position GetPlayerPosition(char[,] matrix)
+        static Position GetPlayerPosition(char[,] matrix)
         {
             Position position = null;
             for (int row = 0; row < matrix.GetLength(0); row++)
@@ -150,17 +139,31 @@ namespace P4._2.ReVolt
                     }
                 }
             }
+
             return position;
         }
-        private static void PrintMatrix(char[,] matrix)
+
+        private static void Print(char[,] matrix)
         {
             for (int row = 0; row < matrix.GetLength(0); row++)
             {
                 for (int col = 0; col < matrix.GetLength(1); col++)
                 {
-                    Console.Write((char)matrix[row, col]);
+                    Console.Write(matrix[row, col]);
                 }
                 Console.WriteLine();
+            }
+        }
+
+        private static void Read(char[,] matrix)
+        {
+            for (int row = 0; row < matrix.GetLength(0); row++)
+            {
+                string line = Console.ReadLine();
+                for (int col = 0; col < line.Length; col++)
+                {
+                    matrix[row, col] = line[col];
+                }
             }
         }
     }
